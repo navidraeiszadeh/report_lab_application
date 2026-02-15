@@ -1,0 +1,1516 @@
+[
+  {
+    "en_name": "Urea",
+    "fa_name": "اوره",
+    "abbreviation": "Urea",
+    "category": "Blood biochemistry",
+    "representation_type": "Numeric",
+    "unit": "mg/dl",
+    "lb": 0,
+    "ub": 1000,
+    "fix_point": 0
+  },
+  {
+    "en_name": "Natrium",
+    "fa_name": "سدیم",
+    "abbreviation": "Na",
+    "category": "Blood biochemistry",
+    "representation_type": "Numeric",
+    "unit": "meq/l",
+    "lb": 25,
+    "ub": 1000,
+    "fix_point": 0
+  },
+  {
+    "en_name": "Potassium",
+    "fa_name": "پتاسیم",
+    "abbreviation": "K",
+    "category": "Blood biochemistry",
+    "representation_type": "Numeric",
+    "unit": "meq/l",
+    "lb": 25,
+    "ub": 1000,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Albumin",
+    "fa_name": "آلبومین",
+    "abbreviation": "Alb",
+    "category": "Blood biochemistry",
+    "representation_type": "Numeric",
+    "unit": "g/dl",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Aspartate transaminase",
+    "fa_name": "آنزیم AST",
+    "abbreviation": "AST",
+    "category": "Blood biochemistry",
+    "representation_type": "Numeric",
+    "unit": "IU/L",
+    "lb": 0,
+    "ub": 10000,
+    "fix_point": 0
+  },
+  {
+    "en_name": "Alanine transaminase",
+    "fa_name": "آنزیم ALT ",
+    "abbreviation": "ALT",
+    "category": "Blood biochemistry",
+    "representation_type": "Numeric",
+    "unit": "IU/L",
+    "lb": 0,
+    "ub": 10000,
+    "fix_point": 0
+  },
+  {
+    "en_name": "Alkaline Phosphatase",
+    "fa_name": "آنزیم ALP",
+    "abbreviation": "ALP",
+    "category": "Blood biochemistry",
+    "representation_type": "Numeric",
+    "unit": "IU/L",
+    "lb": 0,
+    "ub": 10000,
+    "fix_point": 0
+  },
+  {
+    "en_name": "‌Total Bilirubin",
+    "fa_name": "بیلی‌روبین (کامل)",
+    "abbreviation": "Total Bili",
+    "category": "Blood biochemistry",
+    "representation_type": "Numeric",
+    "unit": "mg/dl",
+    "lb": 0,
+    "ub": 1000,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Direct Bilirubin",
+    "fa_name": "بیلی روبین (مستقیم)",
+    "abbreviation": "Direct Bili",
+    "category": "Blood biochemistry",
+    "representation_type": "Numeric",
+    "unit": "mg/dl",
+    "lb": 0,
+    "ub": 1000,
+    "fix_point": 3
+  },
+  {
+    "en_name": "2-hour post-parandial glucose",
+    "fa_name": "گلوکز دوساعت پس از مصرف غذا",
+    "abbreviation": "2hpp",
+    "category": "Blood biochemistry",
+    "representation_type": "Numeric",
+    "unit": "mg/dl",
+    "lb": 0,
+    "ub": 1000,
+    "fix_point": 0
+  },
+  {
+    "en_name": "Troponin",
+    "fa_name": "تروپونین",
+    "abbreviation": "Trop",
+    "category": "Blood biochemistry",
+    "representation_type": "Numeric",
+    "unit": "ng/ml",
+    "lb": 0,
+    "ub": 25,
+    "fix_point": 3
+  },
+  {
+    "en_name": "creatine phosphokinase",
+    "fa_name": "کراتین فسفوکیناز",
+    "abbreviation": "CPK",
+    "category": "Blood biochemistry",
+    "representation_type": "Numeric",
+    "unit": "IU/L",
+    "lb": 0,
+    "ub": 10000,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Creatine kinase-MB",
+    "fa_name": "کراتین کیناز MB",
+    "abbreviation": "CK-MB",
+    "category": "Blood biochemistry",
+    "representation_type": "Numeric",
+    "unit": "IU/L",
+    "lb": 0,
+    "ub": 1000,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Athrogenic index (LDL to HDL ratio)",
+    "fa_name": "شاخص آتروژنیک (نسبت LDL به HDL)",
+    "abbreviation": "LDL/HDL",
+    "category": "Blood biochemistry",
+    "representation_type": "Numeric",
+    "unit": null,
+    "lb": 1,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Very Low-density Lipoprotein",
+    "fa_name": "لیپوپروتئین با چگالی بسیار پایین",
+    "abbreviation": "VLDL",
+    "category": "Blood biochemistry",
+    "representation_type": "Numeric",
+    "unit": "mg/dl",
+    "lb": 0,
+    "ub": 1000,
+    "fix_point": 0
+  },
+  {
+    "en_name": "Coronary Heart Disease risk (Cholesterol to HDL ratio)",
+    "fa_name": "خطر بیماری عروق قلبی (نسیت کلسترول به HDL)",
+    "abbreviation": "Chol/HDL",
+    "category": "Blood biochemistry",
+    "representation_type": "Numeric",
+    "unit": null,
+    "lb": 1,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Uric Acid",
+    "fa_name": "اوریک اسید",
+    "abbreviation": "Uric Acid",
+    "category": "Blood biochemistry",
+    "representation_type": "Numeric",
+    "unit": "mg/dl",
+    "lb": 0,
+    "ub": 1000,
+    "fix_point": 0
+  },
+  {
+    "en_name": "C-Reactive protein (quantitative)",
+    "fa_name": "پروتئین واکنشی فاز حاد C (کمی)",
+    "abbreviation": "CRP (quantitative)",
+    "category": "Blood biochemistry",
+    "representation_type": "Numeric",
+    "unit": "mg/dl",
+    "lb": 0,
+    "ub": 1000,
+    "fix_point": 3
+  },
+  {
+    "en_name": "C-Reactive protein (qualitative)",
+    "fa_name": "پروتئین واکنشی فاز حاد C (کیفی)",
+    "abbreviation": "CRP (qualitative)",
+    "category": "Blood biochemistry",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "Normal",
+      "Slightly increased",
+      "Moderately increased",
+      "Markedly increased"
+    ]
+  },
+  {
+    "en_name": "Calcium",
+    "fa_name": "کلسیم",
+    "abbreviation": "Ca",
+    "category": "Blood biochemistry",
+    "representation_type": "Numeric",
+    "unit": "mg/dl",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Magnesium",
+    "fa_name": "منیزیوم",
+    "abbreviation": "Mg",
+    "category": "Blood biochemistry",
+    "representation_type": "Numeric",
+    "unit": "mg/dl",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Zinc",
+    "fa_name": "زینک",
+    "abbreviation": "Zn",
+    "category": "Blood biochemistry",
+    "representation_type": "Numeric",
+    "unit": "mg/dl",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Phosphorus",
+    "fa_name": "فسفر",
+    "abbreviation": "P",
+    "category": "Blood biochemistry",
+    "representation_type": "Numeric",
+    "unit": "mg/dl",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Lactate dehydrogenase",
+    "fa_name": "لاکتات دهیدروژناز",
+    "abbreviation": "LDH",
+    "category": "Blood biochemistry",
+    "representation_type": "Numeric",
+    "unit": "IU/L",
+    "lb": 0,
+    "ub": 10000,
+    "fix_point": 3
+  },
+  {
+    "en_name": "D-Dimer",
+    "fa_name": "دی-دایمر",
+    "abbreviation": "D-Dimer",
+    "category": "Blood biochemistry",
+    "representation_type": "Numeric",
+    "unit": "ng FEU/ml",
+    "lb": 0,
+    "ub": 10000,
+    "fix_point": 0
+  },
+  {
+    "en_name": "Urine Color",
+    "fa_name": "رنگ ادرار",
+    "abbreviation": "UC",
+    "category": "Urine biochemistry",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "Yellow",
+      "Red",
+      "Brown",
+      "Clear",
+      "Cloudy"
+    ]
+  },
+  {
+    "en_name": "Urine Appearance",
+    "fa_name": "ظاهر ادرار",
+    "abbreviation": "UAp",
+    "category": "Urine biochemistry",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "Clear",
+      "Cloudy"
+    ]
+  },
+  {
+    "en_name": "Urine Specific Gravity",
+    "fa_name": "وزن خاص ادرار",
+    "abbreviation": "Urine SG",
+    "category": "Urine biochemistry",
+    "representation_type": "Numeric",
+    "unit": null,
+    "lb": 1000,
+    "ub": 1050,
+    "fix_point": 4
+  },
+  {
+    "en_name": "Urine pH",
+    "fa_name": "pH ادرار",
+    "abbreviation": "Urine pH",
+    "category": "Urine biochemistry",
+    "representation_type": "Numeric",
+    "unit": null,
+    "lb": 0,
+    "ub": 10,
+    "fix_point": 0
+  },
+  {
+    "en_name": "Urine Protein",
+    "fa_name": "پروتئین ادرار",
+    "abbreviation": "UP",
+    "category": "Urine biochemistry",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "Negative",
+      "Trace",
+      "1+",
+      "2+",
+      "3+",
+      "4+"
+    ]
+  },
+  {
+    "en_name": "Urine Glucose",
+    "fa_name": "گلوکز ادرار",
+    "abbreviation": "UG",
+    "category": "Urine biochemistry",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "Negative",
+      "Trace",
+      "1+",
+      "2+",
+      "3+",
+      "4+"
+    ]
+  },
+  {
+    "en_name": "Urine Ketones",
+    "fa_name": "کتون ادرار",
+    "abbreviation": "UK",
+    "category": "Urine biochemistry",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "Negative",
+      "Trace",
+      "1+",
+      "2+",
+      "3+",
+      "4+"
+    ]
+  },
+  {
+    "en_name": "Urine Blood",
+    "fa_name": "خون در ادرار",
+    "abbreviation": "UB",
+    "category": "Urine biochemistry",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "Negative",
+      "Trace",
+      "1+",
+      "2+",
+      "3+",
+      "4+"
+    ]
+  },
+  {
+    "en_name": "Urine Bilirubin",
+    "fa_name": "بیلی روبین ادرار",
+    "abbreviation": "UBil",
+    "category": "Urine biochemistry",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "Negative",
+      "Trace",
+      "1+",
+      "2+",
+      "3+",
+      "4+"
+    ]
+  },
+  {
+    "en_name": "Urine Urobilinogen",
+    "fa_name": "اوروبیلینوژن ادرار",
+    "abbreviation": "UUro",
+    "category": "Urine biochemistry",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "Negative",
+      "Trace",
+      "1+",
+      "2+",
+      "3+",
+      "4+"
+    ]
+  },
+  {
+    "en_name": "Urine Nitrite",
+    "fa_name": "نیتریت ادرار",
+    "abbreviation": "UN",
+    "category": "Urine biochemistry",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "Negative",
+      "Trace",
+      "1+",
+      "2+",
+      "3+",
+      "4+"
+    ]
+  },
+  {
+    "en_name": "Urine White Blood Cells",
+    "fa_name": "گلوبول‌های سفید خون در ادرار",
+    "abbreviation": "Urine WBC",
+    "category": "Urine biochemistry",
+    "representation_type": "Numeric",
+    "unit": "cells/HPF",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 0
+  },
+  {
+    "en_name": "Urine Red Blood Cells",
+    "fa_name": "گلوبول‌های قرمز خون در ادرار",
+    "abbreviation": "Urine RBC",
+    "category": "Urine biochemistry",
+    "representation_type": "Numeric",
+    "unit": "cells/HPF",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 0
+  },
+  {
+    "en_name": "Urine Epithelial Cells",
+    "fa_name": "سلول‌های اپیتلیالی در ادرار",
+    "abbreviation": "UEC",
+    "category": "Urine biochemistry",
+    "representation_type": "Numeric",
+    "unit": "cells/HPF",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 0
+  },
+  {
+    "en_name": "Bacteria",
+    "fa_name": "باکتری",
+    "abbreviation": "Urine Bac",
+    "category": "Urine biochemistry",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "None",
+      "Few",
+      "Moderate",
+      "Many"
+    ]
+  },
+  {
+    "en_name": "Urine Volume/ 24hr",
+    "fa_name": "حجم ادرار 24 ساعته",
+    "abbreviation": "Ur.V/24 hr",
+    "category": "Urine biochemistry",
+    "representation_type": "Numeric",
+    "unit": "ml/24hr",
+    "lb": 0,
+    "ub": 100000,
+    "fix_point": 0
+  },
+  {
+    "en_name": "Urine Creatinine/ 24 hr ",
+    "fa_name": "کراتنین ادرار 24 ساعته",
+    "abbreviation": "Ur. Cr/24 hr",
+    "category": "Urine biochemistry",
+    "representation_type": "Numeric",
+    "unit": "mg/24hr",
+    "lb": 0,
+    "ub": 100000,
+    "fix_point": 0
+  },
+  {
+    "en_name": "Urine Protein/ 24 hr",
+    "fa_name": "پروتئین ادرار 24 ساعته",
+    "abbreviation": "Ur. Pr/ 24 hr",
+    "category": "Urine biochemistry",
+    "representation_type": "Numeric",
+    "unit": "mg/24hr",
+    "lb": 0,
+    "ub": 10000,
+    "fix_point": 0
+  },
+  {
+    "en_name": "Urine Micro Albumine/ 24 hr",
+    "fa_name": "میکروآلبومین ادرار 24 ساعته",
+    "abbreviation": "Ur. Micro Alb/ 24hr",
+    "category": "Urine biochemistry",
+    "representation_type": "Numeric",
+    "unit": "mg/24hr",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Spot Urine Protein to Creatininie ratio",
+    "fa_name": "نسبت پروتئین به کراتنین ادرار لحظه‌ای",
+    "abbreviation": "Spot Ur. Pr/ Cr",
+    "category": "Urine biochemistry",
+    "representation_type": "Numeric",
+    "unit": null,
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Red Blood Cells",
+    "fa_name": "گلبول های قرمز خون",
+    "abbreviation": "RBC",
+    "category": "Hematology",
+    "representation_type": "Numeric",
+    "unit": "10^12/µl",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Hemoglobin",
+    "fa_name": "هموگلوبین  ",
+    "abbreviation": "HGB",
+    "category": "Hematology",
+    "representation_type": "Numeric",
+    "unit": "mg/dl",
+    "lb": 0,
+    "ub": 30,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Hematocrite ",
+    "fa_name": "هماتوکریت",
+    "abbreviation": "HCT",
+    "category": "Hematology",
+    "representation_type": "Numeric",
+    "unit": "%",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Mean Corpuscular Volume",
+    "fa_name": "میانگین حجم سلولی",
+    "abbreviation": "MCV",
+    "category": "Hematology",
+    "representation_type": "Numeric",
+    "unit": "fL",
+    "lb": 0,
+    "ub": 250,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Mean corpuscular hemoglobin",
+    "fa_name": "میانگین هموگلوبین سلولی",
+    "abbreviation": "MCH",
+    "category": "Hematology",
+    "representation_type": "Numeric",
+    "unit": "pg",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Mean corpuscular hemoglobin concentration",
+    "fa_name": "میانگین غلظت هموگلوبین سلولی",
+    "abbreviation": "MCHC",
+    "category": "Hematology",
+    "representation_type": "Numeric",
+    "unit": "g/dl",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "red blood cell distribution width",
+    "fa_name": "پهنای توزیع گلبول‌های قرمز",
+    "abbreviation": "RDW",
+    "category": "Hematology",
+    "representation_type": "Numeric",
+    "unit": "%",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "White blood cell",
+    "fa_name": "گلبول های سفید خون",
+    "abbreviation": "WBC",
+    "category": "Hematology",
+    "representation_type": "Numeric",
+    "unit": "10^3/µl",
+    "lb": 0,
+    "ub": 30,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Neutrophil",
+    "fa_name": "نوتروفیل",
+    "abbreviation": "NEU",
+    "category": "Hematology",
+    "representation_type": "Numeric",
+    "unit": "%",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Lymphocyte",
+    "fa_name": "لنفوسیت",
+    "abbreviation": "LYM",
+    "category": "Hematology",
+    "representation_type": "Numeric",
+    "unit": "%",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Monocyte",
+    "fa_name": "مونوسیت",
+    "abbreviation": "MON",
+    "category": "Hematology",
+    "representation_type": "Numeric",
+    "unit": "%",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Eosinophil ",
+    "fa_name": "ائوزینوفیل",
+    "abbreviation": "EOS",
+    "category": "Hematology",
+    "representation_type": "Numeric",
+    "unit": "%",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Basophil",
+    "fa_name": "بازوفیل",
+    "abbreviation": "BAS",
+    "category": "Hematology",
+    "representation_type": "Numeric",
+    "unit": "%",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Platelet",
+    "fa_name": "پلاکت",
+    "abbreviation": "PLT",
+    "category": "Hematology",
+    "representation_type": "Numeric",
+    "unit": "10^3/µl",
+    "lb": 0,
+    "ub": 1000000,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Platelet distribution width",
+    "fa_name": "پهنای توزیع پلاکتی",
+    "abbreviation": "PDW",
+    "category": "Hematology",
+    "representation_type": "Numeric",
+    "unit": null,
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "mean platelet volume",
+    "fa_name": "میانگین حجم پلاکت",
+    "abbreviation": "MPV",
+    "category": "Hematology",
+    "representation_type": "Numeric",
+    "unit": "fL",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Plateletcrit",
+    "fa_name": "پلاکتوکریت",
+    "abbreviation": "PCT",
+    "category": "Hematology",
+    "representation_type": "Numeric",
+    "unit": "%",
+    "lb": 0,
+    "ub": 1,
+    "fix_point": 4
+  },
+  {
+    "en_name": "Retic Count",
+    "fa_name": "شمارش رتیکولوسیت",
+    "abbreviation": "Retic Count",
+    "category": "Hematology",
+    "representation_type": "Numeric",
+    "unit": "%",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Glucose-6 Phosphate dehydrogenase",
+    "fa_name": "گلوکوز-۶ فسفات دهیدروژناز",
+    "abbreviation": "G6PD",
+    "category": "Hematology",
+    "representation_type": "Numeric",
+    "unit": "IU/g Hg",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Folate",
+    "fa_name": "فولات",
+    "abbreviation": "Vit B9",
+    "category": "Hematology",
+    "representation_type": "Numeric",
+    "unit": "ng/ml",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Vitamin B12",
+    "fa_name": "ویتامین B12",
+    "abbreviation": "Vit B12",
+    "category": "Hematology",
+    "representation_type": "Numeric",
+    "unit": "ng/ml",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Serum Iron",
+    "fa_name": "آهن سرم",
+    "abbreviation": "SI",
+    "category": "Hematology",
+    "representation_type": "Numeric",
+    "unit": "µg/dl",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Total iron binding capacity",
+    "fa_name": "ظرفیت اتصال آهن ",
+    "abbreviation": "TIBC",
+    "category": "Hematology",
+    "representation_type": "Numeric",
+    "unit": "µg/dl",
+    "lb": 0,
+    "ub": 1000,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Blood group",
+    "fa_name": "گروه خونی",
+    "abbreviation": "BG",
+    "category": "Hematology",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "AB",
+      "A",
+      "B",
+      "O"
+    ]
+  },
+  {
+    "en_name": "Rhesus factor",
+    "fa_name": "گروه رزوس",
+    "abbreviation": "Rh",
+    "category": "Hematology",
+    "representation_type": "Boolean",
+    "unit": null
+  },
+  {
+    "en_name": "erythrocyte sedimentation rate",
+    "fa_name": "نرخ رسوب اریتروسیت",
+    "abbreviation": "ESR",
+    "category": "Hematology",
+    "representation_type": "Numeric",
+    "unit": "mm/hr",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 0
+  },
+  {
+    "en_name": "Occult blood",
+    "fa_name": "خون مخفی",
+    "abbreviation": "OB",
+    "category": "Parasitology",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "Negative",
+      "1+",
+      "2+",
+      "3+",
+      "4+",
+      "5+"
+    ]
+  },
+  {
+    "en_name": "Stool Consistency",
+    "fa_name": "قوام مدفوع",
+    "abbreviation": "SC",
+    "category": "Parasitology",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "Hard",
+      "Formed",
+      "Soft",
+      "Loose",
+      "Watery"
+    ]
+  },
+  {
+    "en_name": "Stool Color",
+    "fa_name": "رنگ مدفوع",
+    "abbreviation": "SCol",
+    "category": "Parasitology",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "Brown",
+      "Green",
+      "Yellow",
+      "Black",
+      "Red"
+    ]
+  },
+  {
+    "en_name": "Ova and parasite in Stool",
+    "fa_name": "تخم و انگل در مدفوع",
+    "abbreviation": "OPS",
+    "category": "Parasitology",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "None",
+      "Present"
+    ]
+  },
+  {
+    "en_name": "Protozoa cyst in stool",
+    "fa_name": "کیست پروتوزوا در مدفوع",
+    "abbreviation": "PCS",
+    "category": "Parasitology",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "None",
+      "Present"
+    ]
+  },
+  {
+    "en_name": "COVID-19 antibody (IgM)",
+    "fa_name": "آنتی‌بادی M ضد کووید-۱۹",
+    "abbreviation": "COVID-19 IgM",
+    "category": "Immunology",
+    "representation_type": "Numeric",
+    "unit": null,
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "COVID-19 antibody (IgG)",
+    "fa_name": "آنتی‌بادی G‌ ضد کووید-۱۹",
+    "abbreviation": "COVID-19 IgG",
+    "category": "Immunology",
+    "representation_type": "Numeric",
+    "unit": null,
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Varicella-Zoster Virus Immunoglobin M (Quantitative)",
+    "fa_name": "آنتی بادی M علیه ویروس عامل زنا (کمی)",
+    "abbreviation": "VZV IgM (quantitative)",
+    "category": "Immunology",
+    "representation_type": "Numeric",
+    "unit": null,
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Varicella-Zoster Virus Immunoglobin M (Qualitative)",
+    "fa_name": "آنتی بادی M علیه ویروس عامل زنا (کیفی)",
+    "abbreviation": "VZV IgM (qualitative)",
+    "category": "Immunology",
+    "representation_type": "Boolean",
+    "unit": null
+  },
+  {
+    "en_name": "Varicella-Zoster Virus Immunoglobin G (Quantitative)",
+    "fa_name": "آنتی بادی G علیه ویروس عامل زنا (کمی)",
+    "abbreviation": "VZV IgG (quantitative)",
+    "category": "Immunology",
+    "representation_type": "Numeric",
+    "unit": "IU/mL",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Varicella-Zoster Virus Immunoglobin G (Qualitative)",
+    "fa_name": "آنتی بادی G علیه ویروس عامل زنا (کیفی)",
+    "abbreviation": "VZV IgG (qualitative)",
+    "category": "Immunology",
+    "representation_type": "Boolean",
+    "unit": null
+  },
+  {
+    "en_name": "Hepers-simplex virus Immunoglobin M (Quantitative)",
+    "fa_name": "آنتی بادی M علیه ویروس هرپس سیپلکس (کمی)",
+    "abbreviation": "HSV IgM (quantitative)",
+    "category": "Immunology",
+    "representation_type": "Numeric",
+    "unit": null,
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Hepers-simplex virus Immunoglobin M (Qualitative)",
+    "fa_name": "آنتی بادی M علیه ویروس هرپس سیپلکس (کیفی)",
+    "abbreviation": "HSV IgM (qualitative)",
+    "category": "Immunology",
+    "representation_type": "Boolean",
+    "unit": null
+  },
+  {
+    "en_name": "Hepers-simplex virus Immunoglobin G (Quantitative)",
+    "fa_name": "آنتی بادی G علیه ویروس هرپس سیپلکس (کمی)",
+    "abbreviation": "HSV IgG (quantitative)",
+    "category": "Immunology",
+    "representation_type": "Numeric",
+    "unit": null,
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Hepers-simplex virus Immunoglobin G (Qualitative)",
+    "fa_name": "آنتی بادی G علیه ویروس هرپس سیپلکس (کیفی)",
+    "abbreviation": "HSV IgG (qualitative)",
+    "category": "Immunology",
+    "representation_type": "Boolean",
+    "unit": null
+  },
+  {
+    "en_name": "Cytomegalovirus Immunoglobin G (Quantitative)",
+    "fa_name": "آنتی بادی G علیه سایتومگالوویروس (کمی)",
+    "abbreviation": "CMV IgG (quantitative)",
+    "category": "Immunology",
+    "representation_type": "Numeric",
+    "unit": null,
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Cytomegalovirus Immunoglobin G (Qualitative)",
+    "fa_name": "آنتی بادی G علیه سایتومگالوویروس (کیفی)",
+    "abbreviation": "CMV IgG (qualitative)",
+    "category": "Immunology",
+    "representation_type": "Boolean",
+    "unit": null
+  },
+  {
+    "en_name": "Cytomegalovirus Immunoglobin M (Quantitative)",
+    "fa_name": "آنتی بادی M علیه سایتومگالوویروس (کمی)",
+    "abbreviation": "CMV IgM (quantitative)",
+    "category": "Immunology",
+    "representation_type": "Numeric",
+    "unit": null,
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Cytomegalovirus Immunoglobin M (Qualitative)",
+    "fa_name": "آنتی بادی M علیه سایتومگالوویروس (کیفی)",
+    "abbreviation": "CMV IgM (qualitative)",
+    "category": "Immunology",
+    "representation_type": "Boolean",
+    "unit": null
+  },
+  {
+    "en_name": "Perinuclear anti-neutrophil cytoplasmic antibodies",
+    "fa_name": "آنتی بادی‌های سیتوپلاسمی ضد نوتروفیل اطراف هسته‌ای",
+    "abbreviation": "P-ANCA",
+    "category": "Immunology",
+    "representation_type": "Boolean",
+    "unit": null
+  },
+  {
+    "en_name": "Anti–cyclic citrullinated peptide antibody",
+    "fa_name": "آنتی بادی ضد پپتید حلقه‌ای سیترولینه ",
+    "abbreviation": "Anti-CCP Ab",
+    "category": "Immunology",
+    "representation_type": "Numeric",
+    "unit": "U/ml",
+    "lb": 0,
+    "ub": 1000,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Hepatitis B Antigen s ",
+    "fa_name": "آنتی‌ژن s هپاتیت b",
+    "abbreviation": "HbsAg",
+    "category": "Immunology",
+    "representation_type": "Numeric",
+    "unit": "IU/ml",
+    "lb": 0,
+    "ub": 10000,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Anti- Hepatitis B c antigen Antibody",
+    "fa_name": "آنتی بادی ضد آنتی‌ژن c‌ هپاتیت B",
+    "abbreviation": "HbcAb",
+    "category": "Immunology",
+    "representation_type": "Numeric",
+    "unit": "IU/ml",
+    "lb": 0,
+    "ub": 1000,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Anti-Hepatitis B s antigen Antibody",
+    "fa_name": "آنتی بادی ضد آنتی‌ژن s هپاتیت B",
+    "abbreviation": "HbsAb",
+    "category": "Immunology",
+    "representation_type": "Numeric",
+    "unit": "IU/ml",
+    "lb": 0,
+    "ub": 1000,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Anti Hepatitis C Antibody",
+    "fa_name": "آنتی بادی ضد هپاتیت C",
+    "abbreviation": "HCV Ab",
+    "category": "Immunology",
+    "representation_type": "Numeric",
+    "unit": "IU/ml",
+    "lb": 0,
+    "ub": 1000,
+    "fix_point": 3
+  },
+  {
+    "en_name": "wright agglutination test",
+    "fa_name": "تست آگلوتینازیسیون Wright",
+    "abbreviation": "Wright",
+    "category": "Serology",
+    "representation_type": "Boolean",
+    "unit": null
+  },
+  {
+    "en_name": "2-mercaptoethanol test",
+    "fa_name": "تست ۲-مرکاپتواتانول",
+    "abbreviation": "2ME",
+    "category": "Serology",
+    "representation_type": "Boolean",
+    "unit": null
+  },
+  {
+    "en_name": "Rapid plasma reagin test",
+    "fa_name": "تست RPR ",
+    "abbreviation": "RPR",
+    "category": "Serology",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "1:1",
+      "1:2",
+      "1:4",
+      "1:8",
+      "1:16",
+      "1:32",
+      "1:64",
+      "1:128",
+      "1:256",
+      "1:512",
+      "1:1024",
+      "1:2048"
+    ]
+  },
+  {
+    "en_name": "Coombs wright agglutination test",
+    "fa_name": "تست آگلوتینازیسیون Coombs wright",
+    "abbreviation": "Coombs Wright",
+    "category": "Serology",
+    "representation_type": "Boolean",
+    "unit": null
+  },
+  {
+    "en_name": "Rheumatoid Factor (qualitative)",
+    "fa_name": "فاکتور روماتوئید (کیفی)",
+    "abbreviation": "RF (qualitative)",
+    "category": "Serology",
+    "representation_type": "Numeric",
+    "unit": null,
+    "lb": 0,
+    "ub": 5,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Rheumatoid Factor (quantitative)",
+    "fa_name": "فاکتور روماتوئید (کمی)",
+    "abbreviation": "RF (quantitative)",
+    "category": "Serology",
+    "representation_type": "Boolean",
+    "unit": null
+  },
+  {
+    "en_name": "Venereal disease research laboratory",
+    "fa_name": "آزمایش سفلیس VDRL",
+    "abbreviation": "VDRL",
+    "category": "Serology",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "1:1",
+      "1:2",
+      "1:4",
+      "1:8",
+      "1:16",
+      "1:32",
+      "1:64",
+      "1:128",
+      "1:256",
+      "1:512",
+      "1:1024",
+      "1:2048"
+    ]
+  },
+  {
+    "en_name": "Helicobacter Urease Test",
+    "fa_name": "تست اوره‌از هلیکوباکتر پیلوری",
+    "abbreviation": "H. Pylori Urease",
+    "category": "Serology",
+    "representation_type": "Boolean",
+    "unit": null
+  },
+  {
+    "en_name": "Stool culture",
+    "fa_name": "کشت مدفوع",
+    "abbreviation": "S/C",
+    "category": "Microbiology",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "No growth",
+      "Normal flora",
+      "Pathogenic organism"
+    ]
+  },
+  {
+    "en_name": "Urine culture",
+    "fa_name": "کشت ادرار",
+    "abbreviation": "U/C",
+    "category": "Microbiology",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "No growth",
+      "Normal flora",
+      "Pathogenic organism"
+    ]
+  },
+  {
+    "en_name": "Antibiogram",
+    "fa_name": "آنتی بایوگرام",
+    "abbreviation": "Antibiogram",
+    "category": "Microbiology",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "Sensitive",
+      "Intermediate",
+      "Resistant"
+    ]
+  },
+  {
+    "en_name": "Blood culture",
+    "fa_name": "کشت خون",
+    "abbreviation": "B/C",
+    "category": "Microbiology",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "No growth",
+      "Normal flora",
+      "Pathogenic organism"
+    ]
+  },
+  {
+    "en_name": "Vitamin D3",
+    "fa_name": "ویتامین D",
+    "abbreviation": "Vit D3",
+    "category": "Hormone and nutrients",
+    "representation_type": "Numeric",
+    "unit": "ng/ml",
+    "lb": 0,
+    "ub": 1000,
+    "fix_point": 0
+  },
+  {
+    "en_name": "Prostate specific antigen",
+    "fa_name": "آنتی‌ژن اختصاصی پروستات",
+    "abbreviation": "PSA",
+    "category": "Hormone and nutrients",
+    "representation_type": "Numeric",
+    "unit": "ng/ml",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": " Free prostate specific antigen",
+    "fa_name": "آنتی‌ژن اختصاصی پروستات آزاد",
+    "abbreviation": "Free PSA",
+    "category": "Hormone and nutrients",
+    "representation_type": "Numeric",
+    "unit": "ng/ml",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Triiodothyronine ",
+    "fa_name": "هورمون T3",
+    "abbreviation": "T3",
+    "category": "Hormone and nutrients",
+    "representation_type": "Numeric",
+    "unit": "pg/ml",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Thyroid stimulating hormone",
+    "fa_name": "هورمون محرک تیروئید",
+    "abbreviation": "TSH",
+    "category": "Hormone and nutrients",
+    "representation_type": "Numeric",
+    "unit": "µIU/ml",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Free thyroxine",
+    "fa_name": "هورمون تیروکسین آزاد (هورمون FT4)",
+    "abbreviation": "FT4",
+    "category": "Hormone and nutrients",
+    "representation_type": "Numeric",
+    "unit": "ng/dl",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "beta-human chorionic gonadotropin (quantitative)",
+    "fa_name": "هورمون بارداری بتا (کمی)",
+    "abbreviation": "beta-hCG",
+    "category": "Hormone and nutrients",
+    "representation_type": "Numeric",
+    "unit": "µIU/ml",
+    "lb": 0,
+    "ub": 1000000,
+    "fix_point": 3
+  },
+  {
+    "en_name": "beta-human chorionic gonadotropin (qualitative)",
+    "fa_name": "هورمون بارداری بتا (کیفی)",
+    "abbreviation": "Beta-hCG (qualitative)",
+    "category": "Hormone and nutrients",
+    "representation_type": "Boolean",
+    "unit": null
+  },
+  {
+    "en_name": "Rubella Immunoglobin M (Quantitative)",
+    "fa_name": "آنتی بادی M ضد ویروس روبلا (کمی)",
+    "abbreviation": "Rubella IgM (quantitative)",
+    "category": "Hormone and nutrients",
+    "representation_type": "Numeric",
+    "unit": null,
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Rubella Immunoglobin M (Qualitative)",
+    "fa_name": "آنتی بادی M ضد ویروس روبلا (کیفی)",
+    "abbreviation": "Rubella IgM (qualitative)",
+    "category": "Hormone and nutrients",
+    "representation_type": "Boolean",
+    "unit": null
+  },
+  {
+    "en_name": "Rubella Immunoglobin G (Quantitative)",
+    "fa_name": "آنتی بادی G ضد ویروس روبلا (کمی)",
+    "abbreviation": "Rubella IgG (quantitative)",
+    "category": "Hormone and nutrients",
+    "representation_type": "Numeric",
+    "unit": null,
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Rubella Immunoglobin G (Qualitative)",
+    "fa_name": "آنتی بادی G ضد ویروس روبلا (کیفی)",
+    "abbreviation": "Rubella IgG (qualitative)",
+    "category": "Hormone and nutrients",
+    "representation_type": "Boolean",
+    "unit": null
+  },
+  {
+    "en_name": "Toxoplasma Immunoglobin M (Quantitative)",
+    "fa_name": "آنتی بادی M ضد توکسوپلاسما (کمی)",
+    "abbreviation": "Toxo IgM (quantitative)",
+    "category": "Hormone and nutrients",
+    "representation_type": "Numeric",
+    "unit": null,
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Toxoplasma Immunoglobin M (Qualitative)",
+    "fa_name": "آنتی بادی M ضد توکسو پلاسما (کیفی)",
+    "abbreviation": "Toxo IgM (qualitative)",
+    "category": "Hormone and nutrients",
+    "representation_type": "Boolean",
+    "unit": null
+  },
+  {
+    "en_name": "Toxoplasma Immunoglobin G (Quantitative)",
+    "fa_name": "آنتی بادی G ضد توکسوپلاسما (کمی)",
+    "abbreviation": "Toxo IgG (quantitative)",
+    "category": "Hormone and nutrients",
+    "representation_type": "Numeric",
+    "unit": null,
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Toxoplasma Immunoglobin G (Qualitative)",
+    "fa_name": "آنتی بادی G ضد توکسوپلاسما (;کیفی)",
+    "abbreviation": "Toxo IgG (qualitative)",
+    "category": "Hormone and nutrients",
+    "representation_type": "Boolean",
+    "unit": null
+  },
+  {
+    "en_name": "Human Immunodeficiency Virus Antibody",
+    "fa_name": "آنتی بادی ضد ویروس نقص ایمنی ",
+    "abbreviation": "HIV Ab",
+    "category": "Hormone and nutrients",
+    "representation_type": "Boolean",
+    "unit": null
+  },
+  {
+    "en_name": "Human Immunodeficiency P24 Antigen",
+    "fa_name": "آنتی‌ژن P24  ویروس نقص ایمنی ",
+    "abbreviation": "HIV P24 Ag",
+    "category": "Hormone and nutrients",
+    "representation_type": "Boolean",
+    "unit": null
+  },
+  {
+    "en_name": "Ferritin",
+    "fa_name": "فریتین",
+    "abbreviation": "Fer",
+    "category": "Hormone and nutrients",
+    "representation_type": "Numeric",
+    "unit": "ng/ml",
+    "lb": 0,
+    "ub": 1000,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Vitamin C",
+    "fa_name": "ویتامین C",
+    "abbreviation": "Vit C",
+    "category": "Hormone and nutrients",
+    "representation_type": "Numeric",
+    "unit": "ng/ml",
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 3
+  },
+  {
+    "en_name": "Bleeding time",
+    "fa_name": "زمان خونریزی",
+    "abbreviation": "BT",
+    "category": "Coagulation ",
+    "representation_type": "Numeric",
+    "unit": "Min",
+    "lb": 0,
+    "ub": 1000,
+    "fix_point": 0
+  },
+  {
+    "en_name": "Prothrombin time",
+    "fa_name": "زمان پروترومبین",
+    "abbreviation": "PT",
+    "category": "Coagulation ",
+    "representation_type": "Numeric",
+    "unit": "Sec",
+    "lb": 0,
+    "ub": 1000,
+    "fix_point": 0
+  },
+  {
+    "en_name": "partial thromboplastin time",
+    "fa_name": "زمان ترومبوپلاستین نسبی",
+    "abbreviation": "PTT",
+    "category": "Coagulation ",
+    "representation_type": "Numeric",
+    "unit": "Sec",
+    "lb": 0,
+    "ub": 1000,
+    "fix_point": 0
+  },
+  {
+    "en_name": "international normalised ratio",
+    "fa_name": "نسبت نرمال شده بین المللی برای PT",
+    "abbreviation": "INR",
+    "category": "Coagulation ",
+    "representation_type": "Numeric",
+    "unit": null,
+    "lb": 0,
+    "ub": 100,
+    "fix_point": 0
+  },
+  {
+    "en_name": "Urate Amorph",
+    "fa_name": "اورات آمورف",
+    "abbreviation": "UA",
+    "category": "Urine biochemistry",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "Negative",
+      "Few",
+      "Intermediate",
+      "Many"
+    ]
+  },
+  {
+    "en_name": "Calcium Oxalate",
+    "fa_name": "کلسیم اکزالات",
+    "abbreviation": "CO",
+    "category": "Urine biochemistry",
+    "representation_type": "Descriptive",
+    "unit": null,
+    "ordered_values": [
+      "Negative",
+      "Few",
+      "Intermediate",
+      "Many"
+    ]
+  }
+]

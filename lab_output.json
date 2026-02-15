@@ -1,0 +1,387 @@
+{
+  "ocr_text_pages": [
+    "ZOMOROD\nLABORATORY\nخیابان پاسداران | خیابان گل نبی | خیابان ناطق نوری شمالی | پلاک ۲۰\nwww.zomorodlab.ir\n@zomorodlab\nآزمایشگاه پاتوبیولوژی زمرد\n۰۲۱-۹۱۰۰۲۲۲۱\nKIDS\nLAB\n1403/02/09\nمراجعه کننده: آقای ناصر قنبری\nصفحه: ۱ از ۲\nتاریخ پذیرش : ۱۴۰۳/۰۲/۰۶\nسن : ۷۱ سال\nشماره پذیرش : ۲۷۴۰۰\nپزشک معالج :سرکار خانم دکتر نسلی\nتاریخ نمونه گیری : ۱۴۰۳/۰۲/۰۶\nBiochemistry\nTest\nResult\nUnit\nMethod\nReference Interval\nFBS\n115\nH\nmg/dl\nChild : 60 - 100\nAdults : 70 - 108\nAdults > 90 Years : 75 - 121\nHbA1c\n7.2\nH\n%\nNon diabetic: 4.2 - 6.4 %\nGoal\n: < 7%\nAction Suggested : > 8%\nCreatinine\n1.2\nmg/dl\n0.6 - 1.3\nFBS\nHbA1c\n115\n115\n97\n6.5\n7.2\n5.9\n01/04/25\n01/07/24\n03/02/06\n01/04/25\n01/07/24\n03/02/06\nCreatinine\n1.4\n1.2\n1\n01/04/25\n01/07/24\n03/02/06",
+    "ZOMOROD\nLABORATORY\nآزمایشگاه پاتوبیولوژی زمرد\nخیابان پاسداران | خیابان گل نبی | خیابان ناطق نوری شمالی | پلاک ۲۰\nwww.zomorodlab.ir\n@zomorodlab\n۰۲۱-۹۱۰۰۲۲۲۱\nKIDS\nLAB\n1403/02/09\nمراجعه کننده: آقای ناصر قنبری\nشماره پذیرش: ۲۷۴۰۰\nسن: ۷۱ سال\nتاریخ پذیرش: ۱۴۰۳/۰۲/۰۶\nصفحه: ۲ از ۲\nتاریخ نمونه گیری: ۱۴۰۳/۰۲/۰۶\nپزشک معالج: سرکار خانم دکتر نسلی\nUrine Analysis\nUrine Analysis\nMacroscopy\nMicroscopy\nColor\nYellow\nWBC\n0-2\nAppearance\nSemiclear\nRBC\n0-2\nSpecific Gravity\n1015\nEpithelial Cells\n2-5\npH\n6\nBacteria\nNegative\nProtein\nNegative\nMucus\nNegative\nGlucose\nNegative\nCasts\nNegative\nBilirubin\nNegative\nCrystals\nNegative\nUrobilinogen\nNegative\nKetone\nNegative\nNitrite\nNegative\nHemoglobin\nNegative\nBlood\nNegative\nMicrobiology\nTest\nResult\nUnit\nMethod\nReference Interval\nUrine Culture & Sensitivity\nCulture results:\nNo growth after 24 hrs\nآزمایشگاه پاتوبیولوژی زمرد\nدکتر سیده هانا حسینی\nمتخصص پاتولوژی کلینیکال و آناتومیکال\nن.پ: ۱۳۸۹۸۷ ت.ت: ٤٠٧٤٠٢٠٦٠٥"
+  ],
+  "extracted_data": {
+    "PatientInfo": {
+      "First Name": "ناصر",
+      "Last Name": "قنبری",
+      "Gender": "مرد",
+      "Age": "71",
+      "Date of Birth": "1332",
+      "Admission Number": "27400",
+      "Admission Date": "1403/02/06",
+      "Sampling Date": "1403/02/06",
+      "Report Date": "1403/02/09",
+      "Physician": "سرکار خانم دکتر نسلی"
+    },
+    "TestResults": [
+      {
+        "Test": "FBS",
+        "Result": "115",
+        "Unit": "mg/dl",
+        "ReferenceRange": "Child : 60 - 100 Adults : 70 - 108 Adults > 90 Years : 75 - 121",
+        "AdditionalInfo": "H"
+      },
+      {
+        "Test": "HbA1c",
+        "Result": "7.2",
+        "Unit": "%",
+        "ReferenceRange": "Non diabetic: 4.2 - 6.4 % Goal : < 7% Action Suggested : > 8%",
+        "AdditionalInfo": "H"
+      },
+      {
+        "Test": "Creatinine",
+        "Result": "1.2",
+        "Unit": "mg/dl",
+        "ReferenceRange": "0.6 - 1.3"
+      },
+      {
+        "Test": "Urine Color",
+        "Result": "Yellow",
+        "Unit": "N/A"
+      },
+      {
+        "Test": "Urine Appearance",
+        "Result": "Semiclear",
+        "Unit": "N/A"
+      },
+      {
+        "Test": "Urine Specific Gravity",
+        "Result": "1015",
+        "Unit": "N/A"
+      },
+      {
+        "Test": "Urine pH",
+        "Result": "6",
+        "Unit": "N/A"
+      },
+      {
+        "Test": "Urine Protein",
+        "Result": "Negative",
+        "Unit": "N/A"
+      },
+      {
+        "Test": "Urine Glucose",
+        "Result": "Negative",
+        "Unit": "N/A"
+      },
+      {
+        "Test": "Urine Bilirubin",
+        "Result": "Negative",
+        "Unit": "N/A"
+      },
+      {
+        "Test": "Urine Urobilinogen",
+        "Result": "Negative",
+        "Unit": "N/A"
+      },
+      {
+        "Test": "Urine Ketone",
+        "Result": "Negative",
+        "Unit": "N/A"
+      },
+      {
+        "Test": "Urine Nitrite",
+        "Result": "Negative",
+        "Unit": "N/A"
+      },
+      {
+        "Test": "Urine Hemoglobin",
+        "Result": "Negative",
+        "Unit": "N/A"
+      },
+      {
+        "Test": "Urine Blood",
+        "Result": "Negative",
+        "Unit": "N/A"
+      },
+      {
+        "Test": "Urine WBC",
+        "Result": "0-2",
+        "Unit": "N/A"
+      },
+      {
+        "Test": "Urine RBC",
+        "Result": "0-2",
+        "Unit": "N/A"
+      },
+      {
+        "Test": "Urine Epithelial Cells",
+        "Result": "2-5",
+        "Unit": "N/A"
+      },
+      {
+        "Test": "Urine Bacteria",
+        "Result": "Negative",
+        "Unit": "N/A"
+      },
+      {
+        "Test": "Urine Mucus",
+        "Result": "Negative",
+        "Unit": "N/A"
+      },
+      {
+        "Test": "Urine Casts",
+        "Result": "Negative",
+        "Unit": "N/A"
+      },
+      {
+        "Test": "Urine Crystals",
+        "Result": "Negative",
+        "Unit": "N/A"
+      },
+      {
+        "Test": "Urine Culture & Sensitivity",
+        "Result": "No growth after 24 hrs",
+        "Unit": "N/A",
+        "AdditionalInfo": "Culture results:"
+      }
+    ]
+  },
+  "mapped_data": {
+    "FBS": {
+      "Result": "115",
+      "Unit": "mg/dl",
+      "ReferenceRange": "Child : 60 - 100 Adults : 70 - 108 Adults > 90 Years : 75 - 121",
+      "AdditionalInfo": "H"
+    },
+    "HbA1C": {
+      "Result": "7.2",
+      "Unit": "%",
+      "ReferenceRange": "Non diabetic: 4.2 - 6.4 % Goal : < 7% Action Suggested : > 8%",
+      "AdditionalInfo": "H"
+    },
+    "Creatinine": {
+      "Result": "1.2",
+      "Unit": "mg/dl",
+      "ReferenceRange": "0.6 - 1.3"
+    },
+    "Urine Color": {
+      "Result": "Yellow",
+      "Unit": "N/A",
+      "ReferenceRange": null
+    },
+    "Urine Appearance": {
+      "Result": "Semiclear",
+      "Unit": "N/A",
+      "ReferenceRange": null
+    },
+    "Urine Specific Gravity": {
+      "Result": "1015",
+      "Unit": "N/A",
+      "ReferenceRange": null
+    },
+    "Urine pH": {
+      "Result": "6",
+      "Unit": "N/A",
+      "ReferenceRange": null
+    },
+    "Urine Protein": {
+      "Result": "Negative",
+      "Unit": "N/A",
+      "ReferenceRange": null
+    },
+    "Urine Glucose": {
+      "Result": "Negative",
+      "Unit": "N/A",
+      "ReferenceRange": null
+    },
+    "Urine Bilirubin": {
+      "Result": "Negative",
+      "Unit": "N/A",
+      "ReferenceRange": null
+    },
+    "Urine Urobilinogen": {
+      "Result": "Negative",
+      "Unit": "N/A",
+      "ReferenceRange": null
+    },
+    "Urine Ketones": {
+      "Result": "Negative",
+      "Unit": "N/A",
+      "ReferenceRange": null
+    },
+    "Urine Nitrite": {
+      "Result": "Negative",
+      "Unit": "N/A",
+      "ReferenceRange": null
+    },
+    "Urine Blood": {
+      "Result": "Negative",
+      "Unit": "N/A",
+      "ReferenceRange": null
+    },
+    "Urine WBC": {
+      "Result": "0-2",
+      "Unit": "N/A",
+      "ReferenceRange": null
+    },
+    "Urine RBC": {
+      "Result": "0-2",
+      "Unit": "N/A",
+      "ReferenceRange": null
+    },
+    "Urine Epithelial Cells": {
+      "Result": "2-5",
+      "Unit": "N/A",
+      "ReferenceRange": null
+    },
+    "Bacteria": {
+      "Result": "Negative",
+      "Unit": "N/A",
+      "ReferenceRange": null
+    },
+    "Urine Mucus": {
+      "Result": "Negative",
+      "Unit": "N/A",
+      "ReferenceRange": null
+    },
+    "Urine Casts": {
+      "Result": "Negative",
+      "Unit": "N/A",
+      "ReferenceRange": null
+    },
+    "U/C": {
+      "Result": "No growth after 24 hrs",
+      "Unit": "N/A",
+      "ReferenceRange": null,
+      "AdditionalInfo": "Culture results:"
+    },
+    "نام": "ناصر",
+    "نام خانوادگی": "قنبری",
+    "جنسیت": "مرد",
+    "تاریخ تولد": "1332",
+    "تاریخ ثبت نظر": "1403/02/06",
+    "نام پزشک": "سرکار خانم دکتر نسلی"
+  },
+  "unmapped_data": {
+    "Urine Hemoglobin": {
+      "Result": "Negative",
+      "Unit": "N/A",
+      "ReferenceRange": null
+    },
+    "Urine Crystals": {
+      "Result": "Negative",
+      "Unit": "N/A",
+      "ReferenceRange": null
+    },
+    "Age": "71",
+    "Admission Number": "27400",
+    "Sampling Date": "1403/02/06",
+    "Report Date": "1403/02/09"
+  },
+  "ok_parameters": {
+    "FBS": {
+      "Result": "115",
+      "Unit": "mg/dl",
+      "ReferenceRange": "Child : 60 - 100 Adults : 70 - 108 Adults > 90 Years : 75 - 121",
+      "AdditionalInfo": "H"
+    },
+    "HbA1C": {
+      "Result": "7.2",
+      "Unit": "%",
+      "ReferenceRange": "Non diabetic: 4.2 - 6.4 % Goal : < 7% Action Suggested : > 8%",
+      "AdditionalInfo": "H"
+    },
+    "Creatinine": {
+      "Result": "1.2",
+      "Unit": "mg/dl",
+      "ReferenceRange": "0.6 - 1.3"
+    },
+    "Urine Mucus": {
+      "Result": "Negative",
+      "Unit": "N/A",
+      "ReferenceRange": null
+    },
+    "Urine Casts": {
+      "Result": "Negative",
+      "Unit": "N/A",
+      "ReferenceRange": null
+    },
+    "نام": "ناصر",
+    "نام خانوادگی": "قنبری",
+    "جنسیت": "مرد",
+    "تاریخ تولد": "1332",
+    "تاریخ ثبت نظر": "1403/02/06",
+    "نام پزشک": "سرکار خانم دکتر نسلی",
+    "Urine Color": {
+      "Result": "Yellow"
+    },
+    "Urine Protein": {
+      "Result": "Negative"
+    },
+    "Urine Glucose": {
+      "Result": "Negative"
+    },
+    "Urine Bilirubin": {
+      "Result": "Negative"
+    },
+    "Urine Urobilinogen": {
+      "Result": "Negative"
+    },
+    "Urine Ketones": {
+      "Result": "Negative"
+    },
+    "Urine Nitrite": {
+      "Result": "Negative"
+    },
+    "Urine Blood": {
+      "Result": "Negative"
+    },
+    "Bacteria": {
+      "Result": "None"
+    },
+    "Urine Specific Gravity": {
+      "Result": 1015.0
+    },
+    "Urine pH": {
+      "Result": 6
+    }
+  },
+  "not_ok_params": {
+    "not_ok_non_numeric": {
+      "Urine Appearance": {
+        "group": "not_mapped",
+        "value": "Semiclear"
+      },
+      "U/C": {
+        "group": "not_mapped",
+        "value": "No growth after 24 hrs"
+      }
+    },
+    "not_found_non_numeric": {},
+    "not_ok_numeric": {
+      "Urine WBC": {
+        "group": "invalid_format",
+        "value": "0-2"
+      },
+      "Urine RBC": {
+        "group": "invalid_format",
+        "value": "0-2"
+      },
+      "Urine Epithelial Cells": {
+        "group": "invalid_format",
+        "value": "2-5"
+      }
+    },
+    "not_found_numeric": {},
+    "unmapped_data": {
+      "Urine Hemoglobin": {
+        "Result": "Negative",
+        "Unit": "N/A",
+        "ReferenceRange": null
+      },
+      "Urine Crystals": {
+        "Result": "Negative",
+        "Unit": "N/A",
+        "ReferenceRange": null
+      },
+      "Age": "71",
+      "Admission Number": "27400",
+      "Sampling Date": "1403/02/06",
+      "Report Date": "1403/02/09"
+    }
+  }
+}
