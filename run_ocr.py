@@ -36,7 +36,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--ocr-service",
         default="google_lens",
-        choices=["google_lens", "alefba", "ai_models"],
+        choices=["google_lens", "alefba", "ai_models", "local_lens_service"],
         help="OCR service",
     )
     parser.add_argument("--config", default=DEFAULT_CONFIG_PATH, help="Path to ocr_config.json")
@@ -48,6 +48,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--alefba-url", default=None, help="Alefba OCR URL")
     parser.add_argument("--alefba-token", default=None, help="Alefba OCR token")
+    parser.add_argument("--local-lens-url", default=None, help="Local lens OCR URL")
     parser.add_argument("--ai-ocr-key", default=None, help="AI OCR API key (AvalAI)")
     parser.add_argument("--ai-ocr-base-url", default=None, help="AI OCR base URL (AvalAI)")
     parser.add_argument("--ai-ocr-model", default=None, help="AI OCR model name")
@@ -70,6 +71,7 @@ def main() -> int:
         google_credentials_path=args.google_creds,
         alefba_url=args.alefba_url,
         alefba_token=args.alefba_token,
+        local_lens_url=args.local_lens_url,
         ai_ocr_key=args.ai_ocr_key,
         ai_ocr_base_url=args.ai_ocr_base_url,
         ai_ocr_model=args.ai_ocr_model,

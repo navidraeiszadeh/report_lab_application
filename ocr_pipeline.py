@@ -4,6 +4,7 @@ import time
 import base64
 import re
 import sys
+import logging
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -39,6 +40,7 @@ class OCRPipeline:
         google_credentials_path: Optional[str] = None,
         alefba_url: Optional[str] = None,
         alefba_token: Optional[str] = None,
+        local_lens_url: Optional[str] = None,
         ai_ocr_key: Optional[str] = None,
         ai_ocr_base_url: Optional[str] = None,
         ai_ocr_model: Optional[str] = None,
@@ -52,12 +54,18 @@ class OCRPipeline:
         self.google_credentials_path = google_credentials_path
         self.alefba_url = alefba_url
         self.alefba_token = alefba_token
+        self.local_lens_url = local_lens_url
         self.ai_ocr_key = ai_ocr_key
         self.ai_ocr_base_url = ai_ocr_base_url
         self.ai_ocr_model = ai_ocr_model
         self.openai_key = openai_key
         self.openai_base_url = openai_base_url
         self.openai_model = openai_model
+        self.last_ocr_service_used = ocr_service
+
+        if not logging.getLogger().handlers:
+            logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
+        self.logger = logging.getLogger(__name__)
 
         self.config = self._load_config(config_path)
         self.param_lookup = self._load_params(params_path)
@@ -71,6 +79,8 @@ class OCRPipeline:
         ok_parameters, not_ok_params = self._process_mapped(mapped_data, unmapped_data)
 
         return {
+            "ocr_service_requested": self.ocr_service,
+            "ocr_service_used": self.last_ocr_service_used,
             "ocr_text_pages": pages_text,
             "extracted_data": extracted,
             "mapped_data": mapped_data,
@@ -126,12 +136,43 @@ class OCRPipeline:
 
     def _extract_text(self, pdf_path: str) -> List[str]:
         if self.ocr_service == "google_lens":
-            return self._ocr_google_lens(pdf_path)
+            self.logger.info("OCR requested with service=google_lens")
+            try:
+                pages = self._ocr_google_lens(pdf_path)
+                if self._has_usable_text(pages):
+                    self.last_ocr_service_used = "google_lens"
+                    self.logger.info("OCR service=google_lens completed with usable response")
+                    return pages
+                self.logger.warning("OCR service=google_lens returned empty response")
+            except Exception as exc:
+                self.logger.warning("OCR service=google_lens failed: %s", exc)
+
+            self.logger.info("Switching OCR service to ai_models as fallback")
+            pages = self._ocr_ai_models(pdf_path)
+            if not self._has_usable_text(pages):
+                raise RuntimeError("Fallback OCR service ai_models returned empty response")
+            self.last_ocr_service_used = "ai_models"
+            self.logger.info("Fallback OCR service=ai_models completed successfully")
+            return pages
         if self.ocr_service == "alefba":
-            return self._ocr_alefba(pdf_path)
+            self.logger.info("OCR requested with service=alefba")
+            pages = self._ocr_alefba(pdf_path)
+            self.last_ocr_service_used = "alefba"
+            return pages
+        if self.ocr_service == "local_lens_service":
+            self.logger.info("OCR requested with service=local_lens_service")
+            pages = self._ocr_local_lens_service(pdf_path)
+            self.last_ocr_service_used = "local_lens_service"
+            return pages
         if self.ocr_service == "ai_models":
-            return self._ocr_ai_models(pdf_path)
+            self.logger.info("OCR requested with service=ai_models")
+            pages = self._ocr_ai_models(pdf_path)
+            self.last_ocr_service_used = "ai_models"
+            return pages
         raise ValueError(f"Unsupported OCR service: {self.ocr_service}")
+
+    def _has_usable_text(self, pages: List[str]) -> bool:
+        return any(isinstance(page, str) and page.strip() for page in pages)
 
     def _ocr_google_lens(self, pdf_path: str) -> List[str]:
         from io import BytesIO
@@ -154,6 +195,7 @@ class OCRPipeline:
         images = convert_from_bytes(pdf_bytes)
         full_text: List[str] = []
         for page_index, image in enumerate(images, start=1):
+            self.logger.info("Sending OCR request to google_lens page=%s", page_index)
             buffered = BytesIO()
             image.save(buffered, format="PNG")
             image_bytes = buffered.getvalue()
@@ -165,6 +207,7 @@ class OCRPipeline:
                 retriable_exceptions=(InternalServerError, ServiceUnavailable, DeadlineExceeded),
             )
             full_text.append(response.full_text_annotation.text)
+            self.logger.info("Received OCR response from google_lens page=%s", page_index)
 
         return full_text
 
@@ -219,6 +262,94 @@ class OCRPipeline:
         pages = response_json.get("pages", [])
         return [page.get("text") for page in pages if isinstance(page, dict) and page.get("text")]
 
+    def _ocr_local_lens_service(self, pdf_path: str) -> List[str]:
+        import requests
+
+        url = self.local_lens_url or os.getenv("MV0_LOCAL_LENS_URL") or "http://vision-api.mamania.me:8000/predict/pdf/"
+        self.logger.info("Sending OCR request to local_lens_service url=%s", url)
+
+        with open(pdf_path, "rb") as document:
+            files = {
+                "file": (os.path.basename(pdf_path), document, "application/pdf"),
+            }
+            response = requests.post(url, files=files, timeout=180)
+
+        if response.status_code != 200:
+            raise RuntimeError(f"local_lens_service error {response.status_code}: {response.text}")
+
+        response_json = response.json()
+        pages = self._extract_pages_text_from_local_response(response_json)
+        self.logger.info("Received OCR response from local_lens_service pages=%s", len(pages))
+        if not self._has_usable_text(pages):
+            raise RuntimeError("local_lens_service returned empty OCR text")
+        return pages
+
+    def _extract_pages_text_from_local_response(self, payload: Any) -> List[str]:
+        collected: List[str] = []
+
+        def _add_text(value: Any) -> None:
+            if isinstance(value, str):
+                txt = value.strip()
+                if txt:
+                    collected.append(txt)
+
+        def _walk(node: Any) -> None:
+            if isinstance(node, dict):
+                # Google Vision document OCR style:
+                # {"fullTextAnnotation": {"text": "..."}}
+                # {"full_text_annotation": {"text": "..."}}
+                for ann_key in ("fullTextAnnotation", "full_text_annotation"):
+                    ann = node.get(ann_key)
+                    if isinstance(ann, dict):
+                        _add_text(ann.get("text"))
+
+                # Common page-based wrappers used by OCR services.
+                pages = node.get("pages")
+                if isinstance(pages, list):
+                    for page in pages:
+                        if isinstance(page, dict):
+                            _add_text(page.get("text"))
+                            _walk(page)
+
+                # Google Vision batch style: {"responses": [ ... ]}
+                responses = node.get("responses")
+                if isinstance(responses, list):
+                    for item in responses:
+                        _walk(item)
+
+                # Generic wrappers seen in gateways/proxies.
+                for wrapper in ("response", "data", "result", "results"):
+                    if wrapper in node:
+                        _walk(node.get(wrapper))
+
+                # Some services return text directly.
+                _add_text(node.get("text"))
+                _add_text(node.get("full_text"))
+                _add_text(node.get("raw_text"))
+                return
+
+            if isinstance(node, list):
+                for item in node:
+                    _walk(item)
+
+        _walk(payload)
+
+        deduped: List[str] = []
+        seen: set = set()
+        for text in collected:
+            if text not in seen:
+                deduped.append(text)
+                seen.add(text)
+
+        if deduped:
+            return deduped
+
+        if isinstance(payload, dict):
+            details = f"top-level keys={list(payload.keys())}"
+        else:
+            details = f"payload type={type(payload).__name__}"
+        raise RuntimeError(f"Unexpected local_lens_service response format ({details})")
+
     def _ocr_ai_models(self, pdf_path: str) -> List[str]:
         from io import BytesIO
         import requests
@@ -263,6 +394,7 @@ class OCRPipeline:
         images = convert_from_bytes(pdf_bytes)
         full_text: List[str] = []
         for page_index, image in enumerate(images, start=1):
+            self.logger.info("Sending OCR request to ai_models page=%s", page_index)
             buffered = BytesIO()
             image.save(buffered, format="PNG")
             image_b64 = base64.b64encode(buffered.getvalue()).decode("ascii")
@@ -300,6 +432,7 @@ class OCRPipeline:
                 requests_module=requests,
             )
             full_text.append(page_text)
+            self.logger.info("Received OCR response from ai_models page=%s", page_index)
 
         return full_text
 
