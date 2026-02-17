@@ -4,3 +4,7 @@ requests
 langchain
 langchain-openai
 landingai-ade
+flask
+flask-cors
+opencv-python
+pillow
